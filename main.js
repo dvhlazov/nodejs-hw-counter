@@ -24,8 +24,8 @@ const server = http.createServer(async (req, res) => {
         res.setHeader('Content-Type', 'text/css');
         res.end(file);
     }
-    else if (url === '/client/main.js') { // Виправлений шлях до main.js
-        const file = await fs.readFile('./client/main.js', 'utf-8'); // Виправлений шлях до main.js
+    else if (url === '/client/main.js') { 
+        const file = await fs.readFile('./client/main.js', 'utf-8'); 
       
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/javascript');
